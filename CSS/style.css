@@ -1,0 +1,264 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before, 
+*::after{
+    box-sizing: inherit;
+}
+
+:root {
+    --main-font: "Roboto", sans-serif;
+    --primary-text-color:#757575;
+    --primary-title-color:#212121;
+    --accent-color:#2196F3;
+    --primary-white-color: #ffffff;
+    --main-black-color:#000000
+    --secondary-white-color: #F5F4FA;
+    --footer-background-color: #2F303A;
+    --footer-link-color:rgba(255, 255, 255, 0.1);
+}
+    
+   
+body {
+    margin: 0;
+    background-color: var(--primary-white-color);
+    color: #000000;
+    font-family: "Roboto",sans-serif; 
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+   
+}
+a{
+    text-decoration: none;
+}
+/* .header{  background-color: var(--primary-white-color);
+} */
+  
+
+.container {
+width: 1630px;
+padding-left: 15px;
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;
+}
+
+ul {
+    list-style: none;
+}
+.logo{
+    color: #000000 ;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+}
+.logo-accent{
+    color: var(--accent-color);
+}
+/* Logo footer */
+.logo-footer{
+    color: var(--primary-white-color);
+    background-color:var(--footer-background-color);
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+.logo:hover{
+    color: var(--accent-color);
+
+}
+.navigation{
+display: flex;
+
+}
+.menu-nav{
+display: flex;
+
+}
+.menu-nav-item:not(:last-child){
+    margin-right: 32px;
+}
+
+.menu-nav .link {
+    color: var(--primary-title-color);
+    font-weight: 500px;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.menu-nav .link:hover, 
+.menu-nav .link:focus {
+    color: var(--accent-color)
+}
+.auth-nav-item {
+    color: var(--primary-text-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    }
+    
+.auth-nav-item:hover,
+.auth-nav-item:focus {
+    color: var(--accent-color);
+    }
+
+.service-btn{
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+ 
+    }
+      
+.button{
+    color: var(--primary-title-color);
+    font-weight: 500;
+    line-height: 1.62;
+    text-align: center;
+    
+     }
+
+.modal-btn:hover,
+.modal-btn:focus{
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    }
+    
+ .link {
+    text-decoration: none;
+ }
+
+    /* Hero */
+
+.hero-title {
+    color: var(--primary-white-color) ;
+    background: rgba(47, 48, 58, 0.8);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+}
+
+
+/* Section */
+.section-title{
+    color: #212121;
+    text-align: center;
+}
+/* Advantages */
+.advantage-list .title{
+    color: var (--primary-title-color);
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+}
+.advantage-list .text {
+    color: var(--primary-text-color);
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.7;
+}
+/* We-are-making */
+.section-title-item{
+    color: var(--primary-white-color);
+    background: rgba(47, 48, 58, 0.8);
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    
+
+}
+/* Our Teams */
+.title-team-name {
+    color: var(--primary-title-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+
+}
+.title-team-item{
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    
+}
+
+    /* Примеры работ */
+ .title {
+    color: var(--primary-title-color);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+}
+
+.text {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.87; 
+}
+
+/* Address footer */
+.contacts-text {
+    color: var(--primary-white-color);
+    background-color:var(--footer-background-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.contacts-list-item{
+    color: rgba(255, 255, 255, 0.6);
+    background-color:var(--footer-background-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    
+}
+.contacts-list-item:hover,
+.contacts-list-item:focus{
+    color: var(--accent-color);
+}
+
+
+.title-social {
+    color: var(--primary-white-color);
+    background-color:var(--footer-background-color);
+    font-size: 14px;
+    line-height: 1.14;
+    
+}
+.social-links-list .social-links-item {
+color: var(--primary-white-color);
+}
+
+.social-links-item:hover,
+.social-links-item:focus{
+color: var(--primary-white-color);
+background-color: var(--accent-color);
+}
+
+
+
+/* цвета web color: #2196F3; studio #000000;*/
+/* цвет основного текста #000000 */
+/* эффективные решения,  цвет color: #FFFFFF; */
+/* заказать услугу background: #2196F3; */
+/* особенности цвет color: #212121; */
+/* телефон, преимущества цвет color: #757575; */
+/* заголовки цвет color: #212121; */
+/* вторчный фон наша команда background: #F5F4FA; */
+/* подвал цвет background: #2F303A; */
+/* Roboto 400 500 700  Raleway 700*/
