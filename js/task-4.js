@@ -7,17 +7,16 @@ const counterSpan = document.querySelector('#value');
 let counterValue = 0;
 
 const increment = () => {
-    return (counterSpan.textContent = counterValue += 1);
-  };
-  
-  const decrement = () => {
-      if(counterValue > 0){
-    return (counterSpan.textContent = counterValue -= 1);
-    }
-  };
+  counterValue += 1;
+  counter.textContent = counterValue;
+}
 
-counterIncrementBtn.addEventListener('click', increment);
+const decrement = () => {
+  counterValue -= 1;
+  counter.textContent = counterValue;
+}
 
-counterDecrementBtn.addEventListener('click', decrement);
+incrBtnRef.addEventListener('click', increment);
+decrBtnRef.addEventListener('click', decrement);
 
 
